@@ -1,0 +1,976 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-native-gifted-chat',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.21
+3 info using node@v4.8.2
+4 verbose cache add [ 'react-native-gifted-chat', null ]
+5 verbose cache add name=undefined spec="react-native-gifted-chat" args=["react-native-gifted-chat",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'react-native-gifted-chat',
+6 verbose parsed url   path: 'react-native-gifted-chat',
+6 verbose parsed url   href: 'react-native-gifted-chat' }
+7 silly makeCacheDir cache dir uid, gid [ 0, 0 ]
+8 silly lockFile b690f715-react-native-gifted-chat react-native-gifted-chat
+9 verbose lock react-native-gifted-chat /root/.npm/b690f715-react-native-gifted-chat.lock
+10 verbose tar pack [ '/root/.npm/react-native-gifted-chat/0.4.3/package.tgz',
+10 verbose tar pack   'react-native-gifted-chat' ]
+11 verbose tarball /root/.npm/react-native-gifted-chat/0.4.3/package.tgz
+12 verbose folder react-native-gifted-chat
+13 info prepublish react-native-gifted-chat@0.4.3
+14 silly lockFile c174f3f3-tar-react-native-gifted-chat tar://react-native-gifted-chat
+15 verbose lock tar://react-native-gifted-chat /root/.npm/c174f3f3-tar-react-native-gifted-chat.lock
+16 silly lockFile d036de53-ve-gifted-chat-0-4-3-package-tgz tar:///root/.npm/react-native-gifted-chat/0.4.3/package.tgz
+17 verbose lock tar:///root/.npm/react-native-gifted-chat/0.4.3/package.tgz /root/.npm/d036de53-ve-gifted-chat-0-4-3-package-tgz.lock
+18 silly lockFile c174f3f3-tar-react-native-gifted-chat tar://react-native-gifted-chat
+19 silly lockFile c174f3f3-tar-react-native-gifted-chat tar://react-native-gifted-chat
+20 silly lockFile d036de53-ve-gifted-chat-0-4-3-package-tgz tar:///root/.npm/react-native-gifted-chat/0.4.3/package.tgz
+21 silly lockFile d036de53-ve-gifted-chat-0-4-3-package-tgz tar:///root/.npm/react-native-gifted-chat/0.4.3/package.tgz
+22 silly lockFile 3afe7134-native-gifted-chat-0-4-3-package /root/.npm/react-native-gifted-chat/0.4.3/package
+23 verbose lock /root/.npm/react-native-gifted-chat/0.4.3/package /root/.npm/3afe7134-native-gifted-chat-0-4-3-package.lock
+24 silly lockFile 3afe7134-native-gifted-chat-0-4-3-package /root/.npm/react-native-gifted-chat/0.4.3/package
+25 silly lockFile 3afe7134-native-gifted-chat-0-4-3-package /root/.npm/react-native-gifted-chat/0.4.3/package
+26 silly lockFile b690f715-react-native-gifted-chat react-native-gifted-chat
+27 silly lockFile b690f715-react-native-gifted-chat react-native-gifted-chat
+28 silly resolved [ { name: 'react-native-gifted-chat',
+28 silly resolved     version: '0.4.3',
+28 silly resolved     description: 'The most complete chat UI for React Native',
+28 silly resolved     main: 'index.js',
+28 silly resolved     types: 'index.d.ts',
+28 silly resolved     repository:
+28 silly resolved      { type: 'git',
+28 silly resolved        url: 'git+https://github.com/FaridSafi/react-native-gifted-chat.git' },
+28 silly resolved     keywords:
+28 silly resolved      [ 'android',
+28 silly resolved        'ios',
+28 silly resolved        'react-native',
+28 silly resolved        'react',
+28 silly resolved        'react-component',
+28 silly resolved        'messenger',
+28 silly resolved        'message',
+28 silly resolved        'chat' ],
+28 silly resolved     author: { name: 'Farid Safi' },
+28 silly resolved     license: 'MIT',
+28 silly resolved     bugs: { url: 'https://github.com/FaridSafi/react-native-gifted-chat/issues' },
+28 silly resolved     homepage: 'https://github.com/FaridSafi/react-native-gifted-chat#readme',
+28 silly resolved     scripts:
+28 silly resolved      { lint: 'eslint . --ext .js,.jsx',
+28 silly resolved        precommit: 'yarn lint',
+28 silly resolved        test: 'jest --no-watchman',
+28 silly resolved        'test:watch': 'jest --watch',
+28 silly resolved        'test:coverage': 'jest --coverage',
+28 silly resolved        appr: 'cd example-expo && ./setPRVersion.js && yarn && yarn appr',
+28 silly resolved        deploy: 'cd example-expo && yarn install && exp login --username $EXP_USERNAME --password $EXP_PASSWORD && exp publish --non-interactive' },
+28 silly resolved     jest:
+28 silly resolved      { preset: 'react-native',
+28 silly resolved        setupFiles: [Object],
+28 silly resolved        modulePathIgnorePatterns: [Object] },
+28 silly resolved     devDependencies:
+28 silly resolved      { '@types/react': '^16.0.38',
+28 silly resolved        '@types/react-native': '^0.52.12',
+28 silly resolved        babel: '6.23.0',
+28 silly resolved        'babel-jest': '23.0.0-alpha.0',
+28 silly resolved        'babel-preset-react-native': '4.0.0',
+28 silly resolved        eslint: '^4.9.0',
+28 silly resolved        'eslint-config-airbnb': '16.1.0',
+28 silly resolved        'eslint-config-cooperka': '0.2.9',
+28 silly resolved        'eslint-plugin-import': '^2.7.0',
+28 silly resolved        'eslint-plugin-jsx-a11y': '^6.0.2',
+28 silly resolved        'eslint-plugin-react': '^7.4.0',
+28 silly resolved        'eslint-plugin-react-native': '3.2.1',
+28 silly resolved        husky: '0.15.0-rc.2',
+28 silly resolved        jest: '22.1.4',
+28 silly resolved        'react-test-renderer': '16.3.2',
+28 silly resolved        react: '16.2.0',
+28 silly resolved        'react-native': '0.51.0',
+28 silly resolved        'prop-types': '15.6.1' },
+28 silly resolved     dependencies:
+28 silly resolved      { '@expo/react-native-action-sheet': '^1.0.1',
+28 silly resolved        md5: '2.2.1',
+28 silly resolved        moment: '^2.19.0',
+28 silly resolved        'react-native-communications': '2.2.1',
+28 silly resolved        'react-native-invertible-scroll-view': '^1.1.0',
+28 silly resolved        'react-native-lightbox': '^0.7.0',
+28 silly resolved        'react-native-parsed-text': '^0.0.20',
+28 silly resolved        shallowequal: '1.0.2',
+28 silly resolved        uuid: '3.2.1' },
+28 silly resolved     peerDependencies: { 'prop-types': '*', react: '*', 'react-native': '*' },
+28 silly resolved     readme: '<p align="center" >\n    <img alt="react-native-gifted-chat" src="https://thumbs.gfycat.com/AbsoluteSadDobermanpinscher-size_restricted.gif" width="260" height="510" />\n\n</p>\n\n<h3 align="center">\n  💬 Gifted Chat\n</h3>\n<p align="center">\n  The most complete chat UI for React Native <br/>\n  <small>formerly known as Gifted Messenger</small>\n</p>\n<p align="center">\n  <a href="https://www.npmjs.com/package/react-native-gifted-chat">\n  <img alt="npm dowloads" src="https://img.shields.io/npm/dm/react-native-gifted-chat.svg"/></a>\n  <a href="https://www.npmjs.com/package/react-native-gifted-chat"><img alt="npm version" src="https://badge.fury.io/js/react-native-gifted-chat.svg"/></a>\n  <a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/FaridSafi/react-native-gifted-chat.svg" alt="build"></a>\n  <a href="https://reactnative.gallery"><img src="https://img.shields.io/badge/reactnative.gallery-%E2%99%A5-red.svg" alt="reactnative.gallery"></a>\n\n</p>\n<p align="center">\n  <a href="https://circleci.com/gh/FaridSafi/react-native-gifted-chat"><img src="https://circleci.com/gh/FaridSafi/react-native-gifted-chat.svg?style=shield" alt="build"></a>\n  <a href="https://travis-ci.org/FaridSafi/react-native-gifted-chat"><img src="https://api.travis-ci.org/FaridSafi/react-native-gifted-chat.svg" alt="deployed"></a>\n  <a href="https://codecov.io/gh/FaridSafi/react-native-gifted-chat"><img src="https://codecov.io/gh/FaridSafi/react-native-gifted-chat/coverage.svg"></a>\n  <a title=\'License\' href="https://github.com/FaridSafi/react-native-gifted-chat/blob/master/LICENSE" height="18">\n    <img src=\'https://img.shields.io/badge/license-MIT-blue.svg\' />\n  </a>\n</p>\n\n<p align="center">\n  <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=exp://expo.io/@xcarpentier/gifted-chat">\n  <br>\n  <a href="https://snack.expo.io/@xcarpentier/gifted-chat" target="_blank"><i>demo</i></a>\n</p>\n\n## Sponsor\n\n<p align="center">\n <sup>Sponsored by <a href="https://pusher.com/chatkit?utm_source=github&utm_campaign=react-native-gifted-chat-sponsorship">Pusher Chatkit</a>:</sup>\n</p>\n<p align="center">\n  <a href="https://pusher.com/chatkit?utm_source=github&utm_campaign=react-native-gifted-chat-sponsorship">\n    <img width="650" src="https://github.com/bookercodes/react-native-gifted-chat/blob/master/media/chatit-banner.png?raw=true" alt="Pusher Chatkit"></a>\n</p>\n\n## Features\n\n* Fully customizable components\n* Composer actions (to attach photos, etc.)\n* Load earlier messages\n* Copy messages to clipboard\n* Touchable links using [react-native-parsed-text](https://github.com/taskrabbit/react-native-parsed-text)\n* Avatar as user\'s initials\n* Localized dates\n* Multiline TextInput\n* InputToolbar avoiding keyboard\n* Redux support\n* System message\n\n## Dependency\n\n* Use version `0.2.x` for RN `>= 0.44.0`\n* Use version `0.1.x` for RN `>= 0.40.0`\n* Use version `0.0.10` for RN `< 0.40.0`\n\n## Installation\n\n* Using [npm](https://www.npmjs.com/#getting-started): `npm install react-native-gifted-chat --save`\n* Using [Yarn](https://yarnpkg.com/): `yarn add react-native-gifted-chat`\n\n## Example\n\n```jsx\nimport { GiftedChat } from \'react-native-gifted-chat\'\n\nclass Example extends React.Component {\n  state = {\n    messages: [],\n  }\n\n  componentWillMount() {\n    this.setState({\n      messages: [\n        {\n          _id: 1,\n          text: \'Hello developer\',\n          createdAt: new Date(),\n          user: {\n            _id: 2,\n            name: \'React Native\',\n            avatar: \'https://placeimg.com/140/140/any\',\n          },\n        },\n      ],\n    })\n  }\n\n  onSend(messages = []) {\n    this.setState(previousState => ({\n      messages: GiftedChat.append(previousState.messages, messages),\n    }))\n  }\n\n  render() {\n    return (\n      <GiftedChat\n        messages={this.state.messages}\n        onSend={messages => this.onSend(messages)}\n        user={{\n          _id: 1,\n        }}\n      />\n    )\n  }\n}\n```\n\n## Advanced example\n\nSee [`example/App.js`](example/App.js) for a working demo!\n\n## "Slack" example\n\nSee the files in [`example-slack-message`](example-slack-message) for an example of how to override the default UI to make something that looks more like Slack -- with usernames displayed and all messages on the left.\n\n## Message object\n\ne.g. Chat Message\n\n```js\n{\n  _id: 1,\n  text: \'My message\',\n  createdAt: new Date(Date.UTC(2016, 5, 11, 17, 20, 0)),\n  user: {\n    _id: 2,\n    name: \'React Native\',\n    avatar: \'https://facebook.github.io/react/img/logo_og.png\',\n  },\n  image: \'https://facebook.github.io/react/img/logo_og.png\',\n  // Any additional custom parameters are passed through\n}\n```\n\ne.g. System Message\n\n```js\n{\n  _id: 1,\n  text: \'This is a system message\',\n  createdAt: new Date(Date.UTC(2016, 5, 11, 17, 20, 0)),\n  system: true,\n  // Any additional custom parameters are passed through\n}\n```\n\n## Props\n\n* **`messages`** _(Array)_ - Messages to display\n* **`text`** _(String)_ - Input text; default is `undefined`, but if specified, it will override GiftedChat\'s internal state (e.g. for redux; [see notes below](#notes-for-redux))\n* **`placeholder`** _(String)_ - Placeholder when `text` is empty; default is `\'Type a message...\'`\n* **`messageIdGenerator`** _(Function)_ - Generate an id for new messages. Defaults to UUID v4, generated by [uuid](https://github.com/kelektiv/node-uuid)\n* **`user`** _(Object)_ - User sending the messages: `{ _id, name, avatar }`\n* **`onSend`** _(Function)_ - Callback when sending a message\n* **`alwaysShowSend`** _(Bool)_ - Always show send button in input text composer; default `false`, show only when text input is not empty\n* **`locale`** _(String)_ - Locale to localize the dates\n* **`timeFormat`** _(String)_ - Format to use for rendering times; default is `\'LT\'`\n* **`dateFormat`** _(String)_ - Format to use for rendering dates; default is `\'ll\'`\n* **`isAnimated`** _(Bool)_ - Animates the view when the keyboard appears\n* **`loadEarlier`** _(Bool)_ - Enables the "Load earlier messages" button\n* **`onLoadEarlier`** _(Function)_ - Callback when loading earlier messages\n* **`isLoadingEarlier`** _(Bool)_ - Display an `ActivityIndicator` when loading earlier messages\n* **`renderLoading`** _(Function)_ - Render a loading view when initializing\n* **`renderLoadEarlier`** _(Function)_ - Custom "Load earlier messages" button\n* **`renderAvatar`** _(Function)_ - Custom message avatar; set to `null` to not render any avatar for the message\n* **`showUserAvatar`** _(Bool)_ - Whether to render an avatar for the current user; default is `false`, only show avatars for other users\n* **`showAvatarForEveryMessage`** _(Bool)_ - When false, avatars will only be displayed when a consecutive message is from the same user on the same day; default is `false`\n* **`onPressAvatar`** _(Function(`user`))_ - Callback when a message avatar is tapped\n* **`renderAvatarOnTop`** _(Bool)_ - Render the message avatar at the top of consecutive messages, rather than the bottom; default is `false`\n* **`renderBubble`** _(Function)_ - Custom message bubble\n* **`renderSystemMessage`** _(Function)_ - Custom system message\n* **`onLongPress`** _(Function(`context`, `message`))_ - Callback when a message bubble is long-pressed; default is to show an ActionSheet with "Copy Text" (see [example using `showActionSheetWithOptions()`](https://github.com/FaridSafi/react-native-gifted-chat/blob/master@%7B2017-09-25%7D/src/Bubble.js#L96-L119))\n* **`inverted`** _(Bool)_ - Reverses display order of `messages`; default is `true`\n* **`renderMessage`** _(Function)_ - Custom message container\n* **`renderMessageText`** _(Function)_ - Custom message text\n* **`renderMessageImage`** _(Function)_ - Custom message image\n* **`imageProps`** _(Object)_ - Extra props to be passed to the [`<Image>`](https://facebook.github.io/react-native/docs/image.html) component created by the default `renderMessageImage`\n* **`lightboxProps`** _(Object)_ - Extra props to be passed to the `MessageImage`\'s [Lightbox](https://github.com/oblador/react-native-lightbox)\n* **`renderCustomView`** _(Function)_ - Custom view inside the bubble\n* **`renderDay`** _(Function)_ - Custom day above a message\n* **`renderTime`** _(Function)_ - Custom time inside a message\n* **`renderFooter`** _(Function)_ - Custom footer component on the ListView, e.g. `\'User is typing...\'`; see [example/App.js](example/App.js) for an example\n* **`renderChatFooter`** _(Function)_ - Custom component to render below the MessageContainer (separate from the ListView)\n* **`renderInputToolbar`** _(Function)_ - Custom message composer container\n* **`renderComposer`** _(Function)_ - Custom text input message composer\n* **`renderActions`** _(Function)_ - Custom action button on the left of the message composer\n* **`renderSend`** _(Function)_ - Custom send button; you can pass children to the original `Send` component quite easily, for example to use a custom icon ([example](https://github.com/FaridSafi/react-native-gifted-chat/pull/487))\n* **`renderAccessory`** _(Function)_ - Custom second line of actions below the message composer\n* **`onPressActionButton`** _(Function)_ - Callback when the Action button is pressed (if set, the default `actionSheet` will not be used)\n* **`bottomOffset`** _(Integer)_ - Distance of the chat from the bottom of the screen (e.g. useful if you display a tab bar)\n* **`minInputToolbarHeight`** _(Integer)_ - Minimum height of the input toolbar; default is `44`\n* **`listViewProps`** _(Object)_ - Extra props to be passed to the messages [`<ListView>`](https://facebook.github.io/react-native/docs/listview.html); some props can\'t be overridden, see the code in `MessageContainer.render()` for details\n* **`textInputProps`** _(Object)_ - Extra props to be passed to the [`<TextInput>`](https://facebook.github.io/react-native/docs/textinput.html)\n* **`keyboardShouldPersistTaps`** _(Enum)_ - Determines whether the keyboard should stay visible after a tap; see [`<ScrollView>`](https://facebook.github.io/react-native/docs/scrollview.html) docs\n* **`onInputTextChanged`** _(Function)_ - Callback when the input text changes\n* **`maxInputLength`** _(Integer)_ - Max message composer TextInput length\n* **`parsePatterns`** _(Function)_ - Custom parse patterns for [react-native-parsed-text](https://github.com/taskrabbit/react-native-parsed-text) used to linkify message content (like URLs and phone numbers), e.g.:\n\n  ```js\n  <GiftedChat\n    parsePatterns={(linkStyle) => [\n      { type: \'phone\', style: linkStyle, onPress: this.onPressPhoneNumber },\n      { pattern: /#(\\w+)/, style: { ...linkStyle, styles.hashtag }, onPress: this.onPressHashtag },\n    ]}\n  />\n  ```\n\n## Imperative methods\n\n* `focusTextInput()` - Open the keyboard and focus the text input box\n\n## Notes for [Redux](https://github.com/reactjs/redux)\n\nThe `messages` prop should work out-of-the-box with Redux. In most cases this is all you need.\n\nIf you decide to specify a `text` prop, GiftedChat will no longer manage its own internal `text` state and will defer entirely to your prop.\nThis is great for using a tool like Redux, but there\'s one extra step you\'ll need to take:\nsimply implement `onInputTextChanged` to receive typing events and reset events (e.g. to clear the text `onSend`):\n\n```js\n<GiftedChat\n  text={customText}\n  onInputTextChanged={text => this.setCustomText(text)}\n  /* ... */\n/>\n```\n\n## Notes for Android\n\nIf you are using Create React Native App / Expo, no Android specific installation steps are required -- you can skip this section. Otherwise we recommend modifying your project configuration as follows.\n\n* Make sure you have `android:windowSoftInputMode="adjustResize"` in your `AndroidManifest.xml`:\n\n  ```xml\n  <activity\n    android:name=".MainActivity"\n    android:label="@string/app_name"\n    android:windowSoftInputMode="adjustResize"\n    android:configChanges="keyboard|keyboardHidden|orientation|screenSize">\n  ```\n* For **Expo**, there are almost 2 solutions to fix it:\n  * adding KeyboardAvoidingView after GiftedChat\n  * adding an opaque background status bar on app.json https://docs.expo.io/versions/latest/guides/configuration.html#androidstatusbar\n\n* If you plan to use `GiftedChat` inside a `Modal`, see [#200](https://github.com/FaridSafi/react-native-gifted-chat/issues/200).\n## Notes for local development\n\nYou can use [`wml`](https://github.com/wix/wml) to keep the example app in sync\nwith any changes you make to the library during development. Steps:\n\n1. Install it: `npm install -g wml`\n2. Configure it: `wml add . example/node_modules/react-native-gifted-chat` from the root directory\n3. `cd example`\n4. `npm start`\n5. `wml start` in another terminal window (doesn\'t matter where)\n\nNote that it\'s important for `wml start` to come **after** `npm start`, or you\'ll get `Can\'t find entry file index.js` errors.\nIf you have any issues, you can clear your watches using `watchman watch-del-all` and try again.\n\n## Questions\n\n* [How can I set Bubble color for each user?](https://github.com/FaridSafi/react-native-gifted-chat/issues/672)\n* [How can I pass style props to InputToolbar design and customize it\'s color and other styles properties?](https://github.com/FaridSafi/react-native-gifted-chat/issues/662)\n* [How can I change the color of the message box?](https://github.com/FaridSafi/react-native-gifted-chat/issues/640)\n* [Is there a way to manually dismiss the keyboard?](https://github.com/FaridSafi/react-native-gifted-chat/issues/647)\n* [I want to implement a popover that pops right after clicking on a specific avatar,\n  what is the best implementation in this case and how?](https://github.com/FaridSafi/react-native-gifted-chat/issues/660)\n* [Why Textinput is hidden on Android?](https://github.com/FaridSafi/react-native-gifted-chat/issues/680#issuecomment-359699364)\n* [How to use renderLoading?](https://github.com/FaridSafi/react-native-gifted-chat/issues/298)\n* [Can I use MySql to save the message?](https://github.com/FaridSafi/react-native-gifted-chat/issues/738)\n\n## License\n\n* [MIT](LICENSE)\n\n## Author\n\nFeel free to ask me questions on Twitter [@FaridSafi](https://www.twitter.com/FaridSafi)!\n\n## Contributors\n\n* Kevin Cooper [cooperka](https://github.com/cooperka)\n* Kfir Golan [kfiroo](https://github.com/kfiroo)\n* Bruno Cascio [brunocascio](https://github.com/brunocascio)\n* Xavier Carpentier [xcarpentier](https://github.com/xcarpentier)\n* [more](https://github.com/FaridSafi/react-native-gifted-chat/graphs/contributors)\n\n<img src="https://api.keen.io/3.0/projects/5ae31b61c9e77c0001cc2093/events/pageviews?api_key=55301C3E5BAB217E90A5867113C02506CE20385CD6F4C9C1CCDD4671B1A9DE374C3DF9DEF70C0BB3F5A9C5CA4CB1CCCFAF25FC3ED9CF63FB83102456A6881EFBAECD1C7D9718EE5402752DD8F6FA2DEC4D844BCB17FE6262570DB447D9A8CED2&data=eyJ0aXRsZSI6ICJnYyJ9" />\n',
+28 silly resolved     readmeFilename: 'README.md',
+28 silly resolved     gitHead: 'c8c359e4cfc92812f690787c160b0c46731b1c5a',
+28 silly resolved     _id: 'react-native-gifted-chat@0.4.3',
+28 silly resolved     _shasum: 'a332cc6541e69ef360848a11462a7c2ba7e4c6de',
+28 silly resolved     _from: 'react-native-gifted-chat' } ]
+29 info install react-native-gifted-chat@0.4.3 into /home/ashish/Documents/Codes/Gitprojects/chatbox
+30 info installOne react-native-gifted-chat@0.4.3
+31 verbose node_modules/react-native-gifted-chat unbuild
+32 verbose tar unpack /root/.npm/react-native-gifted-chat/0.4.3/package.tgz
+33 silly lockFile a84768c9-modules-react-native-gifted-chat tar:///home/ashish/Documents/Codes/Gitprojects/chatbox/node_modules/react-native-gifted-chat
+34 verbose lock tar:///home/ashish/Documents/Codes/Gitprojects/chatbox/node_modules/react-native-gifted-chat /root/.npm/a84768c9-modules-react-native-gifted-chat.lock
+35 silly lockFile d036de53-ve-gifted-chat-0-4-3-package-tgz tar:///root/.npm/react-native-gifted-chat/0.4.3/package.tgz
+36 verbose lock tar:///root/.npm/react-native-gifted-chat/0.4.3/package.tgz /root/.npm/d036de53-ve-gifted-chat-0-4-3-package-tgz.lock
+37 silly gunzTarPerm modes [ '755', '644' ]
+38 silly gunzTarPerm extractEntry package.json
+39 silly gunzTarPerm extractEntry .npmignore
+40 silly gunzTarPerm extractEntry README.md
+41 silly gunzTarPerm extractEntry LICENSE
+42 silly gunzTarPerm extractEntry index.js
+43 silly gunzTarPerm extractEntry .eslintignore
+44 silly gunzTarPerm extractEntry .travis.yml
+45 silly gunzTarPerm extractEntry circle.yml
+46 silly gunzTarPerm extractEntry .eslintrc
+47 silly gunzTarPerm extractEntry index.d.ts
+48 silly gunzTarPerm extractEntry .watchmanconfig
+49 silly gunzTarPerm extractEntry media/chatit-banner.png
+50 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+51 silly gunzTarPerm extractEntry src/Actions.js
+52 silly gunzTarPerm extractEntry src/Day.js
+53 silly gunzTarPerm extractEntry src/GiftedAvatar.js
+54 silly gunzTarPerm extractEntry src/GiftedChat.js
+55 silly gunzTarPerm extractEntry src/GiftedChatInteractionManager.js
+56 silly gunzTarPerm extractEntry src/Constant.js
+57 silly gunzTarPerm extractEntry src/LoadEarlier.js
+58 silly gunzTarPerm extractEntry src/Message.js
+59 silly gunzTarPerm extractEntry src/MessageContainer.js
+60 silly gunzTarPerm extractEntry src/MessageImage.js
+61 silly gunzTarPerm extractEntry src/MessageText.js
+62 silly gunzTarPerm extractEntry src/Composer.js
+63 silly gunzTarPerm extractEntry src/Send.js
+64 silly gunzTarPerm extractEntry src/Color.js
+65 silly gunzTarPerm extractEntry src/SystemMessage.js
+66 silly gunzTarPerm extractEntry src/Bubble.js
+67 silly gunzTarPerm extractEntry src/Time.js
+68 silly gunzTarPerm extractEntry src/Avatar.js
+69 silly gunzTarPerm extractEntry src/utils.js
+70 silly gunzTarPerm extractEntry src/InputToolbar.js
+71 silly gunzTarPerm extractEntry src/__tests__/Actions.test.js
+72 silly gunzTarPerm extractEntry src/__tests__/Day.test.js
+73 silly gunzTarPerm extractEntry src/__tests__/GiftedAvatar.test.js
+74 silly gunzTarPerm extractEntry src/__tests__/GiftedChat.test.js
+75 silly gunzTarPerm extractEntry src/__tests__/Constant.test.js
+76 silly gunzTarPerm extractEntry src/__tests__/LoadEarlier.test.js
+77 silly gunzTarPerm extractEntry src/__tests__/Message.test.js
+78 silly gunzTarPerm extractEntry src/__tests__/MessageContainer.test.js
+79 silly gunzTarPerm extractEntry src/__tests__/MessageImage.test.js
+80 silly gunzTarPerm extractEntry src/__tests__/MessageText.test.js
+81 silly gunzTarPerm extractEntry src/__tests__/Composer.test.js
+82 silly gunzTarPerm extractEntry src/__tests__/Send.test.js
+83 silly gunzTarPerm extractEntry src/__tests__/Color.test.js
+84 silly gunzTarPerm extractEntry src/__tests__/SystemMessage.test.js
+85 silly gunzTarPerm extractEntry src/__tests__/Bubble.test.js
+86 silly gunzTarPerm extractEntry src/__tests__/Time.test.js
+87 silly gunzTarPerm extractEntry src/__tests__/Avatar.test.js
+88 silly gunzTarPerm extractEntry src/__tests__/InputToolbar.test.js
+89 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/InputToolbar.test.js.snap
+90 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Actions.test.js.snap
+91 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Bubble.test.js.snap
+92 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Color.test.js.snap
+93 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Composer.test.js.snap
+94 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Constant.test.js.snap
+95 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Day.test.js.snap
+96 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/GiftedAvatar.test.js.snap
+97 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/GiftedChat.test.js.snap
+98 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Avatar.test.js.snap
+99 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/LoadEarlier.test.js.snap
+100 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Message.test.js.snap
+101 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/MessageContainer.test.js.snap
+102 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/MessageImage.test.js.snap
+103 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/MessageText.test.js.snap
+104 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Send.test.js.snap
+105 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/SystemMessage.test.js.snap
+106 silly gunzTarPerm extractEntry src/__tests__/__snapshots__/Time.test.js.snap
+107 silly gunzTarPerm extractEntry yarn.lock
+108 silly lockFile a84768c9-modules-react-native-gifted-chat tar:///home/ashish/Documents/Codes/Gitprojects/chatbox/node_modules/react-native-gifted-chat
+109 silly lockFile a84768c9-modules-react-native-gifted-chat tar:///home/ashish/Documents/Codes/Gitprojects/chatbox/node_modules/react-native-gifted-chat
+110 silly lockFile d036de53-ve-gifted-chat-0-4-3-package-tgz tar:///root/.npm/react-native-gifted-chat/0.4.3/package.tgz
+111 silly lockFile d036de53-ve-gifted-chat-0-4-3-package-tgz tar:///root/.npm/react-native-gifted-chat/0.4.3/package.tgz
+112 info preinstall react-native-gifted-chat@0.4.3
+113 verbose readDependencies using package.json deps
+114 verbose readDependencies using package.json deps
+115 verbose cache add [ '@expo/react-native-action-sheet@^1.0.1', null ]
+116 verbose cache add name=undefined spec="@expo/react-native-action-sheet@^1.0.1" args=["@expo/react-native-action-sheet@^1.0.1",null]
+117 verbose parsed url Url {
+117 verbose parsed url   protocol: null,
+117 verbose parsed url   slashes: null,
+117 verbose parsed url   auth: null,
+117 verbose parsed url   host: null,
+117 verbose parsed url   port: null,
+117 verbose parsed url   hostname: null,
+117 verbose parsed url   hash: null,
+117 verbose parsed url   search: null,
+117 verbose parsed url   query: null,
+117 verbose parsed url   pathname: '@expo/react-native-action-sheet@%5E1.0.1',
+117 verbose parsed url   path: '@expo/react-native-action-sheet@%5E1.0.1',
+117 verbose parsed url   href: '@expo/react-native-action-sheet@%5E1.0.1' }
+118 verbose cache add [ 'md5@2.2.1', null ]
+119 verbose cache add name=undefined spec="md5@2.2.1" args=["md5@2.2.1",null]
+120 verbose parsed url Url {
+120 verbose parsed url   protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: 'md5@2.2.1',
+120 verbose parsed url   path: 'md5@2.2.1',
+120 verbose parsed url   href: 'md5@2.2.1' }
+121 verbose cache add [ 'moment@^2.19.0', null ]
+122 verbose cache add name=undefined spec="moment@^2.19.0" args=["moment@^2.19.0",null]
+123 verbose parsed url Url {
+123 verbose parsed url   protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'moment@%5E2.19.0',
+123 verbose parsed url   path: 'moment@%5E2.19.0',
+123 verbose parsed url   href: 'moment@%5E2.19.0' }
+124 verbose cache add name="" spec="expo/react-native-action-sheet@^1.0.1" args=["","expo/react-native-action-sheet@^1.0.1"]
+125 verbose parsed url Url {
+125 verbose parsed url   protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: 'expo/react-native-action-sheet@%5E1.0.1',
+125 verbose parsed url   path: 'expo/react-native-action-sheet@%5E1.0.1',
+125 verbose parsed url   href: 'expo/react-native-action-sheet@%5E1.0.1' }
+126 verbose cache add name="md5" spec="2.2.1" args=["md5","2.2.1"]
+127 verbose parsed url Url {
+127 verbose parsed url   protocol: null,
+127 verbose parsed url   slashes: null,
+127 verbose parsed url   auth: null,
+127 verbose parsed url   host: null,
+127 verbose parsed url   port: null,
+127 verbose parsed url   hostname: null,
+127 verbose parsed url   hash: null,
+127 verbose parsed url   search: null,
+127 verbose parsed url   query: null,
+127 verbose parsed url   pathname: '2.2.1',
+127 verbose parsed url   path: '2.2.1',
+127 verbose parsed url   href: '2.2.1' }
+128 verbose addNamed [ 'md5', '2.2.1' ]
+129 verbose addNamed [ '2.2.1', '2.2.1' ]
+130 silly lockFile 29892c16-md5-2-2-1 md5@2.2.1
+131 verbose lock md5@2.2.1 /root/.npm/29892c16-md5-2-2-1.lock
+132 verbose cache add [ 'react-native-communications@2.2.1', null ]
+133 verbose cache add name=undefined spec="react-native-communications@2.2.1" args=["react-native-communications@2.2.1",null]
+134 verbose parsed url Url {
+134 verbose parsed url   protocol: null,
+134 verbose parsed url   slashes: null,
+134 verbose parsed url   auth: null,
+134 verbose parsed url   host: null,
+134 verbose parsed url   port: null,
+134 verbose parsed url   hostname: null,
+134 verbose parsed url   hash: null,
+134 verbose parsed url   search: null,
+134 verbose parsed url   query: null,
+134 verbose parsed url   pathname: 'react-native-communications@2.2.1',
+134 verbose parsed url   path: 'react-native-communications@2.2.1',
+134 verbose parsed url   href: 'react-native-communications@2.2.1' }
+135 verbose cache add name="moment" spec="^2.19.0" args=["moment","^2.19.0"]
+136 verbose parsed url Url {
+136 verbose parsed url   protocol: null,
+136 verbose parsed url   slashes: null,
+136 verbose parsed url   auth: null,
+136 verbose parsed url   host: null,
+136 verbose parsed url   port: null,
+136 verbose parsed url   hostname: null,
+136 verbose parsed url   hash: null,
+136 verbose parsed url   search: null,
+136 verbose parsed url   query: null,
+136 verbose parsed url   pathname: '%5E2.19.0',
+136 verbose parsed url   path: '%5E2.19.0',
+136 verbose parsed url   href: '%5E2.19.0' }
+137 verbose addNamed [ 'moment', '^2.19.0' ]
+138 verbose addNamed [ null, '>=2.19.0 <3.0.0' ]
+139 silly lockFile c2f6937c-moment-2-19-0 moment@^2.19.0
+140 verbose lock moment@^2.19.0 /root/.npm/c2f6937c-moment-2-19-0.lock
+141 verbose cache add name="expo/react-native-action-sheet" spec="^1.0.1" args=["expo/react-native-action-sheet","^1.0.1"]
+142 verbose parsed url Url {
+142 verbose parsed url   protocol: null,
+142 verbose parsed url   slashes: null,
+142 verbose parsed url   auth: null,
+142 verbose parsed url   host: null,
+142 verbose parsed url   port: null,
+142 verbose parsed url   hostname: null,
+142 verbose parsed url   hash: null,
+142 verbose parsed url   search: null,
+142 verbose parsed url   query: null,
+142 verbose parsed url   pathname: '%5E1.0.1',
+142 verbose parsed url   path: '%5E1.0.1',
+142 verbose parsed url   href: '%5E1.0.1' }
+143 verbose addNamed [ 'expo/react-native-action-sheet', '^1.0.1' ]
+144 verbose addNamed [ null, '>=1.0.1 <2.0.0' ]
+145 silly lockFile affd5e2b--react-native-action-sheet-1-0-1 expo/react-native-action-sheet@^1.0.1
+146 verbose lock expo/react-native-action-sheet@^1.0.1 /root/.npm/affd5e2b--react-native-action-sheet-1-0-1.lock
+147 verbose cache add name="react-native-communications" spec="2.2.1" args=["react-native-communications","2.2.1"]
+148 verbose parsed url Url {
+148 verbose parsed url   protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: '2.2.1',
+148 verbose parsed url   path: '2.2.1',
+148 verbose parsed url   href: '2.2.1' }
+149 verbose addNamed [ 'react-native-communications', '2.2.1' ]
+150 verbose addNamed [ '2.2.1', '2.2.1' ]
+151 silly lockFile a15fd85f-eact-native-communications-2-2-1 react-native-communications@2.2.1
+152 verbose lock react-native-communications@2.2.1 /root/.npm/a15fd85f-eact-native-communications-2-2-1.lock
+153 verbose cache add [ 'react-native-invertible-scroll-view@^1.1.0', null ]
+154 verbose cache add name=undefined spec="react-native-invertible-scroll-view@^1.1.0" args=["react-native-invertible-scroll-view@^1.1.0",null]
+155 verbose parsed url Url {
+155 verbose parsed url   protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: 'react-native-invertible-scroll-view@%5E1.1.0',
+155 verbose parsed url   path: 'react-native-invertible-scroll-view@%5E1.1.0',
+155 verbose parsed url   href: 'react-native-invertible-scroll-view@%5E1.1.0' }
+156 verbose cache add [ 'react-native-lightbox@^0.7.0', null ]
+157 verbose cache add name=undefined spec="react-native-lightbox@^0.7.0" args=["react-native-lightbox@^0.7.0",null]
+158 verbose parsed url Url {
+158 verbose parsed url   protocol: null,
+158 verbose parsed url   slashes: null,
+158 verbose parsed url   auth: null,
+158 verbose parsed url   host: null,
+158 verbose parsed url   port: null,
+158 verbose parsed url   hostname: null,
+158 verbose parsed url   hash: null,
+158 verbose parsed url   search: null,
+158 verbose parsed url   query: null,
+158 verbose parsed url   pathname: 'react-native-lightbox@%5E0.7.0',
+158 verbose parsed url   path: 'react-native-lightbox@%5E0.7.0',
+158 verbose parsed url   href: 'react-native-lightbox@%5E0.7.0' }
+159 verbose cache add [ 'react-native-parsed-text@^0.0.20', null ]
+160 verbose cache add name=undefined spec="react-native-parsed-text@^0.0.20" args=["react-native-parsed-text@^0.0.20",null]
+161 verbose parsed url Url {
+161 verbose parsed url   protocol: null,
+161 verbose parsed url   slashes: null,
+161 verbose parsed url   auth: null,
+161 verbose parsed url   host: null,
+161 verbose parsed url   port: null,
+161 verbose parsed url   hostname: null,
+161 verbose parsed url   hash: null,
+161 verbose parsed url   search: null,
+161 verbose parsed url   query: null,
+161 verbose parsed url   pathname: 'react-native-parsed-text@%5E0.0.20',
+161 verbose parsed url   path: 'react-native-parsed-text@%5E0.0.20',
+161 verbose parsed url   href: 'react-native-parsed-text@%5E0.0.20' }
+162 verbose cache add name="react-native-invertible-scroll-view" spec="^1.1.0" args=["react-native-invertible-scroll-view","^1.1.0"]
+163 verbose parsed url Url {
+163 verbose parsed url   protocol: null,
+163 verbose parsed url   slashes: null,
+163 verbose parsed url   auth: null,
+163 verbose parsed url   host: null,
+163 verbose parsed url   port: null,
+163 verbose parsed url   hostname: null,
+163 verbose parsed url   hash: null,
+163 verbose parsed url   search: null,
+163 verbose parsed url   query: null,
+163 verbose parsed url   pathname: '%5E1.1.0',
+163 verbose parsed url   path: '%5E1.1.0',
+163 verbose parsed url   href: '%5E1.1.0' }
+164 verbose addNamed [ 'react-native-invertible-scroll-view', '^1.1.0' ]
+165 verbose addNamed [ null, '>=1.1.0 <2.0.0' ]
+166 silly lockFile 1138a259-ive-invertible-scroll-view-1-1-0 react-native-invertible-scroll-view@^1.1.0
+167 verbose lock react-native-invertible-scroll-view@^1.1.0 /root/.npm/1138a259-ive-invertible-scroll-view-1-1-0.lock
+168 verbose cache add name="react-native-lightbox" spec="^0.7.0" args=["react-native-lightbox","^0.7.0"]
+169 verbose parsed url Url {
+169 verbose parsed url   protocol: null,
+169 verbose parsed url   slashes: null,
+169 verbose parsed url   auth: null,
+169 verbose parsed url   host: null,
+169 verbose parsed url   port: null,
+169 verbose parsed url   hostname: null,
+169 verbose parsed url   hash: null,
+169 verbose parsed url   search: null,
+169 verbose parsed url   query: null,
+169 verbose parsed url   pathname: '%5E0.7.0',
+169 verbose parsed url   path: '%5E0.7.0',
+169 verbose parsed url   href: '%5E0.7.0' }
+170 verbose addNamed [ 'react-native-lightbox', '^0.7.0' ]
+171 verbose addNamed [ null, '>=0.7.0 <0.8.0' ]
+172 silly lockFile d55f03ae-react-native-lightbox-0-7-0 react-native-lightbox@^0.7.0
+173 verbose lock react-native-lightbox@^0.7.0 /root/.npm/d55f03ae-react-native-lightbox-0-7-0.lock
+174 verbose cache add name="react-native-parsed-text" spec="^0.0.20" args=["react-native-parsed-text","^0.0.20"]
+175 verbose parsed url Url {
+175 verbose parsed url   protocol: null,
+175 verbose parsed url   slashes: null,
+175 verbose parsed url   auth: null,
+175 verbose parsed url   host: null,
+175 verbose parsed url   port: null,
+175 verbose parsed url   hostname: null,
+175 verbose parsed url   hash: null,
+175 verbose parsed url   search: null,
+175 verbose parsed url   query: null,
+175 verbose parsed url   pathname: '%5E0.0.20',
+175 verbose parsed url   path: '%5E0.0.20',
+175 verbose parsed url   href: '%5E0.0.20' }
+176 verbose addNamed [ 'react-native-parsed-text', '^0.0.20' ]
+177 verbose addNamed [ null, '>=0.0.20 <0.0.21' ]
+178 silly lockFile 67b9d4fd-react-native-parsed-text-0-0-20 react-native-parsed-text@^0.0.20
+179 verbose lock react-native-parsed-text@^0.0.20 /root/.npm/67b9d4fd-react-native-parsed-text-0-0-20.lock
+180 verbose cache add [ 'shallowequal@1.0.2', null ]
+181 verbose cache add name=undefined spec="shallowequal@1.0.2" args=["shallowequal@1.0.2",null]
+182 verbose parsed url Url {
+182 verbose parsed url   protocol: null,
+182 verbose parsed url   slashes: null,
+182 verbose parsed url   auth: null,
+182 verbose parsed url   host: null,
+182 verbose parsed url   port: null,
+182 verbose parsed url   hostname: null,
+182 verbose parsed url   hash: null,
+182 verbose parsed url   search: null,
+182 verbose parsed url   query: null,
+182 verbose parsed url   pathname: 'shallowequal@1.0.2',
+182 verbose parsed url   path: 'shallowequal@1.0.2',
+182 verbose parsed url   href: 'shallowequal@1.0.2' }
+183 verbose cache add [ 'uuid@3.2.1', null ]
+184 verbose cache add name=undefined spec="uuid@3.2.1" args=["uuid@3.2.1",null]
+185 verbose parsed url Url {
+185 verbose parsed url   protocol: null,
+185 verbose parsed url   slashes: null,
+185 verbose parsed url   auth: null,
+185 verbose parsed url   host: null,
+185 verbose parsed url   port: null,
+185 verbose parsed url   hostname: null,
+185 verbose parsed url   hash: null,
+185 verbose parsed url   search: null,
+185 verbose parsed url   query: null,
+185 verbose parsed url   pathname: 'uuid@3.2.1',
+185 verbose parsed url   path: 'uuid@3.2.1',
+185 verbose parsed url   href: 'uuid@3.2.1' }
+186 silly addNameRange { name: 'moment', range: '>=2.19.0 <3.0.0', hasData: false }
+187 silly addNameRange { name: 'expo/react-native-action-sheet',
+187 silly addNameRange   range: '>=1.0.1 <2.0.0',
+187 silly addNameRange   hasData: false }
+188 verbose request where is /md5
+189 verbose request registry https://registry.npmjs.org/
+190 verbose request id ab9b4ada62fe48c8
+191 verbose url raw /md5
+192 verbose url resolving [ 'https://registry.npmjs.org/', './md5' ]
+193 verbose url resolved https://registry.npmjs.org/md5
+194 verbose request where is https://registry.npmjs.org/md5
+195 info trying registry request attempt 1 at 11:13:12 PM
+196 http GET https://registry.npmjs.org/md5
+197 verbose cache add name="shallowequal" spec="1.0.2" args=["shallowequal","1.0.2"]
+198 verbose parsed url Url {
+198 verbose parsed url   protocol: null,
+198 verbose parsed url   slashes: null,
+198 verbose parsed url   auth: null,
+198 verbose parsed url   host: null,
+198 verbose parsed url   port: null,
+198 verbose parsed url   hostname: null,
+198 verbose parsed url   hash: null,
+198 verbose parsed url   search: null,
+198 verbose parsed url   query: null,
+198 verbose parsed url   pathname: '1.0.2',
+198 verbose parsed url   path: '1.0.2',
+198 verbose parsed url   href: '1.0.2' }
+199 verbose addNamed [ 'shallowequal', '1.0.2' ]
+200 verbose addNamed [ '1.0.2', '1.0.2' ]
+201 silly lockFile e2314299-shallowequal-1-0-2 shallowequal@1.0.2
+202 verbose lock shallowequal@1.0.2 /root/.npm/e2314299-shallowequal-1-0-2.lock
+203 verbose cache add name="uuid" spec="3.2.1" args=["uuid","3.2.1"]
+204 verbose parsed url Url {
+204 verbose parsed url   protocol: null,
+204 verbose parsed url   slashes: null,
+204 verbose parsed url   auth: null,
+204 verbose parsed url   host: null,
+204 verbose parsed url   port: null,
+204 verbose parsed url   hostname: null,
+204 verbose parsed url   hash: null,
+204 verbose parsed url   search: null,
+204 verbose parsed url   query: null,
+204 verbose parsed url   pathname: '3.2.1',
+204 verbose parsed url   path: '3.2.1',
+204 verbose parsed url   href: '3.2.1' }
+205 verbose addNamed [ 'uuid', '3.2.1' ]
+206 verbose addNamed [ '3.2.1', '3.2.1' ]
+207 silly lockFile 06ebbd51-uuid-3-2-1 uuid@3.2.1
+208 verbose lock uuid@3.2.1 /root/.npm/06ebbd51-uuid-3-2-1.lock
+209 verbose request where is /moment
+210 verbose request registry https://registry.npmjs.org/
+211 verbose url raw /moment
+212 verbose url resolving [ 'https://registry.npmjs.org/', './moment' ]
+213 verbose url resolved https://registry.npmjs.org/moment
+214 verbose request where is https://registry.npmjs.org/moment
+215 info trying registry request attempt 1 at 11:13:12 PM
+216 http GET https://registry.npmjs.org/moment
+217 verbose request where is /expo/react-native-action-sheet
+218 verbose request registry https://registry.npmjs.org/
+219 verbose url raw /expo/react-native-action-sheet
+220 verbose url resolving [ 'https://registry.npmjs.org/',
+220 verbose url resolving   './expo/react-native-action-sheet' ]
+221 verbose url resolved https://registry.npmjs.org/expo/react-native-action-sheet
+222 verbose request where is https://registry.npmjs.org/expo/react-native-action-sheet
+223 info trying registry request attempt 1 at 11:13:12 PM
+224 http GET https://registry.npmjs.org/expo/react-native-action-sheet
+225 verbose request where is /react-native-communications
+226 verbose request registry https://registry.npmjs.org/
+227 verbose url raw /react-native-communications
+228 verbose url resolving [ 'https://registry.npmjs.org/',
+228 verbose url resolving   './react-native-communications' ]
+229 verbose url resolved https://registry.npmjs.org/react-native-communications
+230 verbose request where is https://registry.npmjs.org/react-native-communications
+231 info trying registry request attempt 1 at 11:13:12 PM
+232 http GET https://registry.npmjs.org/react-native-communications
+233 silly addNameRange { name: 'react-native-invertible-scroll-view',
+233 silly addNameRange   range: '>=1.1.0 <2.0.0',
+233 silly addNameRange   hasData: false }
+234 silly addNameRange { name: 'react-native-lightbox',
+234 silly addNameRange   range: '>=0.7.0 <0.8.0',
+234 silly addNameRange   hasData: false }
+235 silly addNameRange { name: 'react-native-parsed-text',
+235 silly addNameRange   range: '>=0.0.20 <0.0.21',
+235 silly addNameRange   hasData: false }
+236 verbose request where is /react-native-invertible-scroll-view
+237 verbose request registry https://registry.npmjs.org/
+238 verbose url raw /react-native-invertible-scroll-view
+239 verbose url resolving [ 'https://registry.npmjs.org/',
+239 verbose url resolving   './react-native-invertible-scroll-view' ]
+240 verbose url resolved https://registry.npmjs.org/react-native-invertible-scroll-view
+241 verbose request where is https://registry.npmjs.org/react-native-invertible-scroll-view
+242 info trying registry request attempt 1 at 11:13:17 PM
+243 http GET https://registry.npmjs.org/react-native-invertible-scroll-view
+244 verbose request where is /react-native-lightbox
+245 verbose request registry https://registry.npmjs.org/
+246 verbose url raw /react-native-lightbox
+247 verbose url resolving [ 'https://registry.npmjs.org/', './react-native-lightbox' ]
+248 verbose url resolved https://registry.npmjs.org/react-native-lightbox
+249 verbose request where is https://registry.npmjs.org/react-native-lightbox
+250 info trying registry request attempt 1 at 11:13:17 PM
+251 http GET https://registry.npmjs.org/react-native-lightbox
+252 verbose request where is /react-native-parsed-text
+253 verbose request registry https://registry.npmjs.org/
+254 verbose url raw /react-native-parsed-text
+255 verbose url resolving [ 'https://registry.npmjs.org/', './react-native-parsed-text' ]
+256 verbose url resolved https://registry.npmjs.org/react-native-parsed-text
+257 verbose request where is https://registry.npmjs.org/react-native-parsed-text
+258 info trying registry request attempt 1 at 11:13:17 PM
+259 http GET https://registry.npmjs.org/react-native-parsed-text
+260 verbose request where is /shallowequal
+261 verbose request registry https://registry.npmjs.org/
+262 verbose url raw /shallowequal
+263 verbose url resolving [ 'https://registry.npmjs.org/', './shallowequal' ]
+264 verbose url resolved https://registry.npmjs.org/shallowequal
+265 verbose request where is https://registry.npmjs.org/shallowequal
+266 info trying registry request attempt 1 at 11:13:17 PM
+267 http GET https://registry.npmjs.org/shallowequal
+268 verbose request where is /uuid
+269 verbose request registry https://registry.npmjs.org/
+270 verbose url raw /uuid
+271 verbose url resolving [ 'https://registry.npmjs.org/', './uuid' ]
+272 verbose url resolved https://registry.npmjs.org/uuid
+273 verbose request where is https://registry.npmjs.org/uuid
+274 info trying registry request attempt 1 at 11:13:17 PM
+275 http GET https://registry.npmjs.org/uuid
+276 http 200 https://registry.npmjs.org/md5
+277 silly registry.get cb [ 200,
+277 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:18 GMT',
+277 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+277 silly registry.get     'transfer-encoding': 'chunked',
+277 silly registry.get     connection: 'close',
+277 silly registry.get     'set-cookie': [ '__cfduid=dd5a4eb981cb7cd7fbf9f7324a6f596bf1531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+277 silly registry.get     'cache-control': 'max-age=300',
+277 silly registry.get     'cf-cache-status': 'HIT',
+277 silly registry.get     'cf-ray': '437c8199bb16700e-SIN',
+277 silly registry.get     etag: 'W/"f39ffcc7937b437d363609d287e05eed"',
+277 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+277 silly registry.get     'last-modified': 'Sun, 27 May 2018 07:39:42 GMT',
+277 silly registry.get     vary: 'accept-encoding, accept',
+277 silly registry.get     server: 'cloudflare',
+277 silly registry.get     'content-encoding': 'gzip' } ]
+278 silly lockFile b5d16c5d-stry-npmjs-org-md5-md5-2-2-1-tgz https://registry.npmjs.org/md5/-/md5-2.2.1.tgz
+279 verbose lock https://registry.npmjs.org/md5/-/md5-2.2.1.tgz /root/.npm/b5d16c5d-stry-npmjs-org-md5-md5-2-2-1-tgz.lock
+280 verbose addRemoteTarball [ 'https://registry.npmjs.org/md5/-/md5-2.2.1.tgz',
+280 verbose addRemoteTarball   '53ab38d5fe3c8891ba465329ea23fac0540126f9' ]
+281 info retry fetch attempt 1 at 11:13:18 PM
+282 verbose fetch to= /tmp/npm-24140-wpUccsJH/registry.npmjs.org/md5/-/md5-2.2.1.tgz
+283 http GET https://registry.npmjs.org/md5/-/md5-2.2.1.tgz
+284 http 200 https://registry.npmjs.org/shallowequal
+285 silly registry.get cb [ 200,
+285 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:18 GMT',
+285 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+285 silly registry.get     'transfer-encoding': 'chunked',
+285 silly registry.get     connection: 'close',
+285 silly registry.get     'set-cookie': [ '__cfduid=ddfcf9d7d262405e7f95adc2fd3d1fda51531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+285 silly registry.get     'cache-control': 'max-age=300',
+285 silly registry.get     'cf-cache-status': 'HIT',
+285 silly registry.get     'cf-ray': '437c8199ddfc7014-SIN',
+285 silly registry.get     etag: 'W/"a0bf4b6ce6cf04a8e517f96035315d38"',
+285 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+285 silly registry.get     'last-modified': 'Sat, 23 Jun 2018 22:33:37 GMT',
+285 silly registry.get     vary: 'accept-encoding, accept',
+285 silly registry.get     server: 'cloudflare',
+285 silly registry.get     'content-encoding': 'gzip' } ]
+286 silly lockFile 1a4eac75-llowequal-shallowequal-1-0-2-tgz https://registry.npmjs.org/shallowequal/-/shallowequal-1.0.2.tgz
+287 verbose lock https://registry.npmjs.org/shallowequal/-/shallowequal-1.0.2.tgz /root/.npm/1a4eac75-llowequal-shallowequal-1-0-2-tgz.lock
+288 verbose addRemoteTarball [ 'https://registry.npmjs.org/shallowequal/-/shallowequal-1.0.2.tgz',
+288 verbose addRemoteTarball   '1561dbdefb8c01408100319085764da3fcf83f8f' ]
+289 info retry fetch attempt 1 at 11:13:18 PM
+290 verbose fetch to= /tmp/npm-24140-wpUccsJH/registry.npmjs.org/shallowequal/-/shallowequal-1.0.2.tgz
+291 http GET https://registry.npmjs.org/shallowequal/-/shallowequal-1.0.2.tgz
+292 http 200 https://registry.npmjs.org/react-native-parsed-text
+293 silly registry.get cb [ 200,
+293 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:18 GMT',
+293 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+293 silly registry.get     'transfer-encoding': 'chunked',
+293 silly registry.get     connection: 'close',
+293 silly registry.get     'set-cookie': [ '__cfduid=de58b54a8cce20755c64731abbb0c6a801531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+293 silly registry.get     'cache-control': 'max-age=300',
+293 silly registry.get     'cf-cache-status': 'HIT',
+293 silly registry.get     'cf-ray': '437c8199e8733132-SIN',
+293 silly registry.get     etag: 'W/"8455992843f01990d7f972d0dcfd11c4"',
+293 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+293 silly registry.get     'last-modified': 'Sun, 27 May 2018 14:41:59 GMT',
+293 silly registry.get     vary: 'accept-encoding, accept',
+293 silly registry.get     server: 'cloudflare',
+293 silly registry.get     'content-encoding': 'gzip' } ]
+294 silly addNameRange number 2 { name: 'react-native-parsed-text',
+294 silly addNameRange   range: '>=0.0.20 <0.0.21',
+294 silly addNameRange   hasData: true }
+295 silly addNameRange versions [ 'react-native-parsed-text',
+295 silly addNameRange   [ '0.0.1',
+295 silly addNameRange     '0.0.2',
+295 silly addNameRange     '0.0.3',
+295 silly addNameRange     '0.0.4',
+295 silly addNameRange     '0.0.5',
+295 silly addNameRange     '0.0.6',
+295 silly addNameRange     '0.0.7',
+295 silly addNameRange     '0.0.8',
+295 silly addNameRange     '0.0.9',
+295 silly addNameRange     '0.0.10',
+295 silly addNameRange     '0.0.11',
+295 silly addNameRange     '0.0.12',
+295 silly addNameRange     '0.0.13',
+295 silly addNameRange     '0.0.15',
+295 silly addNameRange     '0.0.16',
+295 silly addNameRange     '0.0.17',
+295 silly addNameRange     '0.0.18',
+295 silly addNameRange     '0.0.19',
+295 silly addNameRange     '0.0.20' ] ]
+296 verbose addNamed [ 'react-native-parsed-text', '0.0.20' ]
+297 verbose addNamed [ '0.0.20', '0.0.20' ]
+298 silly lockFile 227dfe60-react-native-parsed-text-0-0-20 react-native-parsed-text@0.0.20
+299 verbose lock react-native-parsed-text@0.0.20 /root/.npm/227dfe60-react-native-parsed-text-0-0-20.lock
+300 silly lockFile 120bde0a-ct-native-parsed-text-0-0-20-tgz https://registry.npmjs.org/react-native-parsed-text/-/react-native-parsed-text-0.0.20.tgz
+301 verbose lock https://registry.npmjs.org/react-native-parsed-text/-/react-native-parsed-text-0.0.20.tgz /root/.npm/120bde0a-ct-native-parsed-text-0-0-20-tgz.lock
+302 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-native-parsed-text/-/react-native-parsed-text-0.0.20.tgz',
+302 verbose addRemoteTarball   '7bd35fec88c3ca0eb0e8250a98e24092b4ee7fef' ]
+303 info retry fetch attempt 1 at 11:13:18 PM
+304 verbose fetch to= /tmp/npm-24140-wpUccsJH/registry.npmjs.org/react-native-parsed-text/-/react-native-parsed-text-0.0.20.tgz
+305 http GET https://registry.npmjs.org/react-native-parsed-text/-/react-native-parsed-text-0.0.20.tgz
+306 http 200 https://registry.npmjs.org/react-native-lightbox
+307 silly registry.get cb [ 200,
+307 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:18 GMT',
+307 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+307 silly registry.get     'transfer-encoding': 'chunked',
+307 silly registry.get     connection: 'close',
+307 silly registry.get     'set-cookie': [ '__cfduid=d1588c1c3fe071b640a79854cc3d09b191531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+307 silly registry.get     'cache-control': 'max-age=300',
+307 silly registry.get     'cf-cache-status': 'HIT',
+307 silly registry.get     'cf-ray': '437c819a0cdf7086-SIN',
+307 silly registry.get     etag: 'W/"db844ba91e95543ec1464b739ab776b6"',
+307 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+307 silly registry.get     'last-modified': 'Sun, 27 May 2018 14:34:21 GMT',
+307 silly registry.get     vary: 'accept-encoding, accept',
+307 silly registry.get     server: 'cloudflare',
+307 silly registry.get     'content-encoding': 'gzip' } ]
+308 silly addNameRange number 2 { name: 'react-native-lightbox',
+308 silly addNameRange   range: '>=0.7.0 <0.8.0',
+308 silly addNameRange   hasData: true }
+309 silly addNameRange versions [ 'react-native-lightbox',
+309 silly addNameRange   [ '0.1.0',
+309 silly addNameRange     '0.1.1',
+309 silly addNameRange     '0.2.0',
+309 silly addNameRange     '0.3.0',
+309 silly addNameRange     '0.4.0',
+309 silly addNameRange     '0.4.1',
+309 silly addNameRange     '0.5.0',
+309 silly addNameRange     '0.5.1',
+309 silly addNameRange     '0.6.0',
+309 silly addNameRange     '0.7.0' ] ]
+310 verbose addNamed [ 'react-native-lightbox', '0.7.0' ]
+311 verbose addNamed [ '0.7.0', '0.7.0' ]
+312 silly lockFile 158f21f4-react-native-lightbox-0-7-0 react-native-lightbox@0.7.0
+313 verbose lock react-native-lightbox@0.7.0 /root/.npm/158f21f4-react-native-lightbox-0-7-0.lock
+314 silly lockFile a7639d18--react-native-lightbox-0-7-0-tgz https://registry.npmjs.org/react-native-lightbox/-/react-native-lightbox-0.7.0.tgz
+315 verbose lock https://registry.npmjs.org/react-native-lightbox/-/react-native-lightbox-0.7.0.tgz /root/.npm/a7639d18--react-native-lightbox-0-7-0-tgz.lock
+316 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-native-lightbox/-/react-native-lightbox-0.7.0.tgz',
+316 verbose addRemoteTarball   'e52b4d7fcc141f59d7b23f0180de535e35b20ec9' ]
+317 info retry fetch attempt 1 at 11:13:18 PM
+318 verbose fetch to= /tmp/npm-24140-wpUccsJH/registry.npmjs.org/react-native-lightbox/-/react-native-lightbox-0.7.0.tgz
+319 http GET https://registry.npmjs.org/react-native-lightbox/-/react-native-lightbox-0.7.0.tgz
+320 http 200 https://registry.npmjs.org/react-native-communications
+321 silly registry.get cb [ 200,
+321 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:18 GMT',
+321 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+321 silly registry.get     'transfer-encoding': 'chunked',
+321 silly registry.get     connection: 'close',
+321 silly registry.get     'set-cookie': [ '__cfduid=de7864130bb5094f78b03171c7ed2597e1531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+321 silly registry.get     'cache-control': 'max-age=300',
+321 silly registry.get     'cf-cache-status': 'HIT',
+321 silly registry.get     'cf-ray': '437c819a1e4e17aa-SIN',
+321 silly registry.get     etag: 'W/"fa07db00ced564176602819fde49578b"',
+321 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+321 silly registry.get     'last-modified': 'Sun, 27 May 2018 14:22:20 GMT',
+321 silly registry.get     vary: 'accept-encoding, accept',
+321 silly registry.get     server: 'cloudflare',
+321 silly registry.get     'content-encoding': 'gzip' } ]
+322 silly lockFile 70da9fbb--native-communications-2-2-1-tgz https://registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz
+323 verbose lock https://registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz /root/.npm/70da9fbb--native-communications-2-2-1-tgz.lock
+324 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz',
+324 verbose addRemoteTarball   '7883b56b20a002eeb790c113f8616ea8692ca795' ]
+325 info retry fetch attempt 1 at 11:13:18 PM
+326 verbose fetch to= /tmp/npm-24140-wpUccsJH/registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz
+327 http GET https://registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz
+328 http 200 https://registry.npmjs.org/uuid
+329 silly registry.get cb [ 200,
+329 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:18 GMT',
+329 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+329 silly registry.get     'transfer-encoding': 'chunked',
+329 silly registry.get     connection: 'close',
+329 silly registry.get     'set-cookie': [ '__cfduid=d5d29a6fef7d1dbbe9da25ecae5428b311531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+329 silly registry.get     'cache-control': 'max-age=300',
+329 silly registry.get     'cf-cache-status': 'HIT',
+329 silly registry.get     'cf-ray': '437c819a4972a9ae-SIN',
+329 silly registry.get     etag: 'W/"69d76dafc53f8618a236b548a1e28aaa"',
+329 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+329 silly registry.get     'last-modified': 'Thu, 28 Jun 2018 21:29:05 GMT',
+329 silly registry.get     vary: 'accept-encoding, accept',
+329 silly registry.get     server: 'cloudflare',
+329 silly registry.get     'content-encoding': 'gzip' } ]
+330 silly lockFile d462ed4e-ry-npmjs-org-uuid-uuid-3-2-1-tgz https://registry.npmjs.org/uuid/-/uuid-3.2.1.tgz
+331 verbose lock https://registry.npmjs.org/uuid/-/uuid-3.2.1.tgz /root/.npm/d462ed4e-ry-npmjs-org-uuid-uuid-3-2-1-tgz.lock
+332 verbose addRemoteTarball [ 'https://registry.npmjs.org/uuid/-/uuid-3.2.1.tgz',
+332 verbose addRemoteTarball   '12c528bb9d58d0b9265d9a2f6f0fe8be17ff1f14' ]
+333 info retry fetch attempt 1 at 11:13:18 PM
+334 verbose fetch to= /tmp/npm-24140-wpUccsJH/registry.npmjs.org/uuid/-/uuid-3.2.1.tgz
+335 http GET https://registry.npmjs.org/uuid/-/uuid-3.2.1.tgz
+336 http 200 https://registry.npmjs.org/moment
+337 silly registry.get cb [ 200,
+337 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:18 GMT',
+337 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+337 silly registry.get     'transfer-encoding': 'chunked',
+337 silly registry.get     connection: 'close',
+337 silly registry.get     'set-cookie': [ '__cfduid=d2c7e04b670bf0479413df24d3a0b99581531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+337 silly registry.get     'cache-control': 'max-age=300',
+337 silly registry.get     'cf-cache-status': 'HIT',
+337 silly registry.get     'cf-ray': '437c8199b86b31e6-SIN',
+337 silly registry.get     etag: 'W/"3e97fa9a1179953803c554c34d53b853"',
+337 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+337 silly registry.get     'last-modified': 'Fri, 01 Jun 2018 06:58:46 GMT',
+337 silly registry.get     vary: 'accept-encoding, accept',
+337 silly registry.get     server: 'cloudflare',
+337 silly registry.get     'content-encoding': 'gzip' } ]
+338 silly addNameRange number 2 { name: 'moment', range: '>=2.19.0 <3.0.0', hasData: true }
+339 silly addNameRange versions [ 'moment',
+339 silly addNameRange   [ '1.0.0',
+339 silly addNameRange     '1.0.1',
+339 silly addNameRange     '1.1.0',
+339 silly addNameRange     '1.1.1',
+339 silly addNameRange     '1.2.0',
+339 silly addNameRange     '1.3.0',
+339 silly addNameRange     '1.4.0',
+339 silly addNameRange     '1.5.0',
+339 silly addNameRange     '1.5.1',
+339 silly addNameRange     '1.6.0',
+339 silly addNameRange     '1.6.1',
+339 silly addNameRange     '1.6.2',
+339 silly addNameRange     '1.7.0',
+339 silly addNameRange     '1.7.1',
+339 silly addNameRange     '1.7.2',
+339 silly addNameRange     '2.0.0',
+339 silly addNameRange     '2.1.0',
+339 silly addNameRange     '2.2.1',
+339 silly addNameRange     '2.3.0',
+339 silly addNameRange     '2.3.1',
+339 silly addNameRange     '2.4.0',
+339 silly addNameRange     '2.5.0',
+339 silly addNameRange     '2.5.1',
+339 silly addNameRange     '2.6.0',
+339 silly addNameRange     '2.7.0',
+339 silly addNameRange     '2.8.1',
+339 silly addNameRange     '2.8.2',
+339 silly addNameRange     '2.8.3',
+339 silly addNameRange     '2.8.4',
+339 silly addNameRange     '2.9.0',
+339 silly addNameRange     '2.10.2',
+339 silly addNameRange     '2.10.3',
+339 silly addNameRange     '2.10.5',
+339 silly addNameRange     '2.10.6',
+339 silly addNameRange     '2.11.0',
+339 silly addNameRange     '2.11.1',
+339 silly addNameRange     '2.11.2',
+339 silly addNameRange     '2.12.0',
+339 silly addNameRange     '2.13.0',
+339 silly addNameRange     '2.14.0',
+339 silly addNameRange     '2.14.1',
+339 silly addNameRange     '2.15.0',
+339 silly addNameRange     '2.15.1',
+339 silly addNameRange     '2.15.2',
+339 silly addNameRange     '2.16.0',
+339 silly addNameRange     '2.17.0',
+339 silly addNameRange     '2.17.1',
+339 silly addNameRange     '2.18.0',
+339 silly addNameRange     '2.18.1',
+339 silly addNameRange     '2.19.0',
+339 silly addNameRange     '2.19.1',
+339 silly addNameRange     '2.19.2',
+339 silly addNameRange     '2.19.3',
+339 silly addNameRange     '2.19.4',
+339 silly addNameRange     '2.20.0',
+339 silly addNameRange     '2.20.1',
+339 silly addNameRange     '2.21.0',
+339 silly addNameRange     '2.22.0',
+339 silly addNameRange     '2.22.1',
+339 silly addNameRange     '2.22.2' ] ]
+340 verbose addNamed [ 'moment', '2.22.2' ]
+341 verbose addNamed [ '2.22.2', '2.22.2' ]
+342 silly lockFile c000585c-moment-2-22-2 moment@2.22.2
+343 verbose lock moment@2.22.2 /root/.npm/c000585c-moment-2-22-2.lock
+344 silly lockFile 17f061cc-mjs-org-moment-moment-2-22-2-tgz https://registry.npmjs.org/moment/-/moment-2.22.2.tgz
+345 verbose lock https://registry.npmjs.org/moment/-/moment-2.22.2.tgz /root/.npm/17f061cc-mjs-org-moment-moment-2-22-2-tgz.lock
+346 verbose addRemoteTarball [ 'https://registry.npmjs.org/moment/-/moment-2.22.2.tgz',
+346 verbose addRemoteTarball   '3c257f9839fc0e93ff53149632239eb90783ff66' ]
+347 info retry fetch attempt 1 at 11:13:18 PM
+348 verbose fetch to= /tmp/npm-24140-wpUccsJH/registry.npmjs.org/moment/-/moment-2.22.2.tgz
+349 http GET https://registry.npmjs.org/moment/-/moment-2.22.2.tgz
+350 http 200 https://registry.npmjs.org/react-native-invertible-scroll-view
+351 silly registry.get cb [ 200,
+351 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:18 GMT',
+351 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+351 silly registry.get     'transfer-encoding': 'chunked',
+351 silly registry.get     connection: 'close',
+351 silly registry.get     'set-cookie': [ '__cfduid=da63108f00144aa5603571a5c4845ea421531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+351 silly registry.get     'cache-control': 'max-age=300',
+351 silly registry.get     'cf-cache-status': 'HIT',
+351 silly registry.get     'cf-ray': '437c819a8c8f6f90-SIN',
+351 silly registry.get     etag: 'W/"60c227a4ad98516e37075b7253271388"',
+351 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+351 silly registry.get     'last-modified': 'Fri, 08 Jun 2018 18:24:53 GMT',
+351 silly registry.get     vary: 'accept-encoding, accept',
+351 silly registry.get     server: 'cloudflare',
+351 silly registry.get     'content-encoding': 'gzip' } ]
+352 silly addNameRange number 2 { name: 'react-native-invertible-scroll-view',
+352 silly addNameRange   range: '>=1.1.0 <2.0.0',
+352 silly addNameRange   hasData: true }
+353 silly addNameRange versions [ 'react-native-invertible-scroll-view',
+353 silly addNameRange   [ '0.0.2',
+353 silly addNameRange     '0.0.3',
+353 silly addNameRange     '0.0.4',
+353 silly addNameRange     '0.1.0',
+353 silly addNameRange     '0.1.1',
+353 silly addNameRange     '0.1.2',
+353 silly addNameRange     '0.2.0',
+353 silly addNameRange     '1.0.0',
+353 silly addNameRange     '1.1.0',
+353 silly addNameRange     '1.1.1' ] ]
+354 verbose addNamed [ 'react-native-invertible-scroll-view', '1.1.1' ]
+355 verbose addNamed [ '1.1.1', '1.1.1' ]
+356 silly lockFile 1ecbcd3b-ive-invertible-scroll-view-1-1-1 react-native-invertible-scroll-view@1.1.1
+357 verbose lock react-native-invertible-scroll-view@1.1.1 /root/.npm/1ecbcd3b-ive-invertible-scroll-view-1-1-1.lock
+358 silly lockFile 82f98918-invertible-scroll-view-1-1-1-tgz https://registry.npmjs.org/react-native-invertible-scroll-view/-/react-native-invertible-scroll-view-1.1.1.tgz
+359 verbose lock https://registry.npmjs.org/react-native-invertible-scroll-view/-/react-native-invertible-scroll-view-1.1.1.tgz /root/.npm/82f98918-invertible-scroll-view-1-1-1-tgz.lock
+360 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-native-invertible-scroll-view/-/react-native-invertible-scroll-view-1.1.1.tgz',
+360 verbose addRemoteTarball   '43039037e6537dc8c4f29baae1cd1a223bc25d81' ]
+361 info retry fetch attempt 1 at 11:13:18 PM
+362 verbose fetch to= /tmp/npm-24140-wpUccsJH/registry.npmjs.org/react-native-invertible-scroll-view/-/react-native-invertible-scroll-view-1.1.1.tgz
+363 http GET https://registry.npmjs.org/react-native-invertible-scroll-view/-/react-native-invertible-scroll-view-1.1.1.tgz
+364 http 200 https://registry.npmjs.org/react-native-parsed-text/-/react-native-parsed-text-0.0.20.tgz
+365 silly lockFile 120bde0a-ct-native-parsed-text-0-0-20-tgz https://registry.npmjs.org/react-native-parsed-text/-/react-native-parsed-text-0.0.20.tgz
+366 silly lockFile 120bde0a-ct-native-parsed-text-0-0-20-tgz https://registry.npmjs.org/react-native-parsed-text/-/react-native-parsed-text-0.0.20.tgz
+367 silly lockFile 227dfe60-react-native-parsed-text-0-0-20 react-native-parsed-text@0.0.20
+368 silly lockFile 227dfe60-react-native-parsed-text-0-0-20 react-native-parsed-text@0.0.20
+369 silly lockFile 67b9d4fd-react-native-parsed-text-0-0-20 react-native-parsed-text@^0.0.20
+370 silly lockFile 67b9d4fd-react-native-parsed-text-0-0-20 react-native-parsed-text@^0.0.20
+371 http 200 https://registry.npmjs.org/shallowequal/-/shallowequal-1.0.2.tgz
+372 http 200 https://registry.npmjs.org/md5/-/md5-2.2.1.tgz
+373 silly lockFile 1a4eac75-llowequal-shallowequal-1-0-2-tgz https://registry.npmjs.org/shallowequal/-/shallowequal-1.0.2.tgz
+374 silly lockFile 1a4eac75-llowequal-shallowequal-1-0-2-tgz https://registry.npmjs.org/shallowequal/-/shallowequal-1.0.2.tgz
+375 silly lockFile e2314299-shallowequal-1-0-2 shallowequal@1.0.2
+376 silly lockFile e2314299-shallowequal-1-0-2 shallowequal@1.0.2
+377 silly lockFile b5d16c5d-stry-npmjs-org-md5-md5-2-2-1-tgz https://registry.npmjs.org/md5/-/md5-2.2.1.tgz
+378 silly lockFile b5d16c5d-stry-npmjs-org-md5-md5-2-2-1-tgz https://registry.npmjs.org/md5/-/md5-2.2.1.tgz
+379 silly lockFile 29892c16-md5-2-2-1 md5@2.2.1
+380 silly lockFile 29892c16-md5-2-2-1 md5@2.2.1
+381 http 200 https://registry.npmjs.org/react-native-lightbox/-/react-native-lightbox-0.7.0.tgz
+382 http 200 https://registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz
+383 silly lockFile a7639d18--react-native-lightbox-0-7-0-tgz https://registry.npmjs.org/react-native-lightbox/-/react-native-lightbox-0.7.0.tgz
+384 silly lockFile a7639d18--react-native-lightbox-0-7-0-tgz https://registry.npmjs.org/react-native-lightbox/-/react-native-lightbox-0.7.0.tgz
+385 silly lockFile 158f21f4-react-native-lightbox-0-7-0 react-native-lightbox@0.7.0
+386 silly lockFile 158f21f4-react-native-lightbox-0-7-0 react-native-lightbox@0.7.0
+387 silly lockFile d55f03ae-react-native-lightbox-0-7-0 react-native-lightbox@^0.7.0
+388 silly lockFile d55f03ae-react-native-lightbox-0-7-0 react-native-lightbox@^0.7.0
+389 silly lockFile 70da9fbb--native-communications-2-2-1-tgz https://registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz
+390 silly lockFile 70da9fbb--native-communications-2-2-1-tgz https://registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz
+391 silly lockFile a15fd85f-eact-native-communications-2-2-1 react-native-communications@2.2.1
+392 silly lockFile a15fd85f-eact-native-communications-2-2-1 react-native-communications@2.2.1
+393 http 405 https://registry.npmjs.org/expo/react-native-action-sheet
+394 silly registry.get cb [ 405,
+394 silly registry.get   { date: 'Mon, 09 Jul 2018 17:28:19 GMT',
+394 silly registry.get     'content-type': 'application/json',
+394 silly registry.get     'content-length': '63',
+394 silly registry.get     connection: 'close',
+394 silly registry.get     'set-cookie': [ '__cfduid=d46e85ce1c1e2fd9a64cb5e3daf7bd43c1531157298; expires=Tue, 09-Jul-19 17:28:18 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+394 silly registry.get     allow: 'PUT',
+394 silly registry.get     'cf-ray': '437c819a3b636fa2-SIN',
+394 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+394 silly registry.get     server: 'cloudflare' } ]
+395 silly lockFile affd5e2b--react-native-action-sheet-1-0-1 expo/react-native-action-sheet@^1.0.1
+396 silly lockFile affd5e2b--react-native-action-sheet-1-0-1 expo/react-native-action-sheet@^1.0.1
+397 verbose about to build /home/ashish/Documents/Codes/Gitprojects/chatbox/node_modules/react-native-gifted-chat
+398 verbose node_modules/react-native-gifted-chat unbuild
+399 info preuninstall react-native-gifted-chat@0.4.3
+400 info uninstall react-native-gifted-chat@0.4.3
+401 verbose true,/home/ashish/Documents/Codes/Gitprojects/chatbox/node_modules,/home/ashish/Documents/Codes/Gitprojects/chatbox/node_modules unbuild react-native-gifted-chat@0.4.3
+402 info postuninstall react-native-gifted-chat@0.4.3
+403 error Error: Method Not Allowed
+403 error     at errorResponse (/usr/share/npm/lib/cache/add-named.js:260:10)
+403 error     at /usr/share/npm/lib/cache/add-named.js:203:12
+403 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+403 error     at FSReqWrap.oncomplete (fs.js:82:15)
+404 error If you need help, you may report this *entire* log,
+404 error including the npm and node versions, at:
+404 error     <http://github.com/npm/npm/issues>
+405 error System Linux 4.9.0-6-amd64
+406 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "react-native-gifted-chat" "--save"
+407 error cwd /home/ashish/Documents/Codes/Gitprojects/chatbox
+408 error node -v v4.8.2
+409 error npm -v 1.4.21
+410 error code E405
+411 verbose exit [ 1, true ]
